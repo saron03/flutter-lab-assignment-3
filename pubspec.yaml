@@ -1,0 +1,27 @@
+name: album_viewer
+description: A Flutter application for fetching and displaying albums and photos from JSONPlaceholder API.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: ^1.2.2          # For network requests
+  flutter_bloc: ^8.1.6  # For state management
+  go_router: ^14.2.8    # For navigation
+  equatable: ^2.0.5     # For comparing objects in Bloc
+  json_annotation: ^4.9.0 # For JSON serialization
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.12
+  json_serializable: ^6.8.0
+
+flutter:
+  uses-material-design: true
