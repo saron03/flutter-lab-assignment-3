@@ -13,7 +13,7 @@ class AppRoutes {
       GoRoute(
         path: home,
         builder: (BuildContext context, GoRouterState state) {
-          return const AlbumListScreen();
+          return AlbumListScreen(); // Removed 'const' to avoid potential issues
         },
       ),
       GoRoute(
@@ -24,6 +24,7 @@ class AppRoutes {
           return AlbumDetailScreen(
             albumId: albumId,
             userId: album?.userId ?? 0,
+            title: album?.title ?? '', // Added title parameter
           );
         },
       ),

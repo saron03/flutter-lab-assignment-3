@@ -8,11 +8,13 @@ import '../../data/models/photo.dart';
 class AlbumDetailScreen extends StatelessWidget {
   final int albumId;
   final int userId;
+  final String title; // Added to receive album title
 
   const AlbumDetailScreen({
     super.key,
     required this.albumId,
     required this.userId,
+    required this.title, // Added to constructor
   });
 
   @override
@@ -29,7 +31,7 @@ class AlbumDetailScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Text(
-              'Album ID: $albumId | User ID: $userId',
+              'Album ID: $albumId | User ID: $userId | Title: $title', // Added title
               style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
           ),
