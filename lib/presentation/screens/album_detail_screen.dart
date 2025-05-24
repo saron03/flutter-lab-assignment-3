@@ -3,18 +3,19 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../domain/blocs/photo/photo_bloc.dart';
 import '../../domain/blocs/photo/photo_event.dart';
 import '../../domain/blocs/photo/photo_state.dart';
+// ignore: unused_import
 import '../../data/models/photo.dart';
 
 class AlbumDetailScreen extends StatelessWidget {
   final int albumId;
   final int userId;
-  final String title; // Added to receive album title
+  final String title; 
 
   const AlbumDetailScreen({
     super.key,
     required this.albumId,
     required this.userId,
-    required this.title, // Added to constructor
+    required this.title, 
   });
 
   @override
